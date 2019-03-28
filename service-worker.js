@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/linnilse/pokemondeck/precache-manifest.881275e0b2ee31ecf6c2fa3c3e416e66.js"
+  "/pokemondeck/precache-manifest.73165f1b526ddc052d9582d9e28625eb.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/linnilse/pokemondeck/index.html", {
+workbox.routing.registerNavigationRoute("/pokemondeck/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

@@ -1,13 +1,13 @@
 {
-  "main.css": "/linnilse/pokemondeck/static/css/main.91cf4cc5.chunk.css",
-  "main.js": "/linnilse/pokemondeck/static/js/main.65615af8.chunk.js",
-  "main.js.map": "/linnilse/pokemondeck/static/js/main.65615af8.chunk.js.map",
-  "runtime~main.js": "/linnilse/pokemondeck/static/js/runtime~main.f5b94d76.js",
-  "runtime~main.js.map": "/linnilse/pokemondeck/static/js/runtime~main.f5b94d76.js.map",
-  "static/js/2.a9e2c106.chunk.js": "/linnilse/pokemondeck/static/js/2.a9e2c106.chunk.js",
-  "static/js/2.a9e2c106.chunk.js.map": "/linnilse/pokemondeck/static/js/2.a9e2c106.chunk.js.map",
-  "index.html": "/linnilse/pokemondeck/index.html",
-  "precache-manifest.881275e0b2ee31ecf6c2fa3c3e416e66.js": "/linnilse/pokemondeck/precache-manifest.881275e0b2ee31ecf6c2fa3c3e416e66.js",
-  "service-worker.js": "/linnilse/pokemondeck/service-worker.js",
-  "static/css/main.91cf4cc5.chunk.css.map": "/linnilse/pokemondeck/static/css/main.91cf4cc5.chunk.css.map"
+  "main.css": "/pokemondeck/static/css/main.91cf4cc5.chunk.css",
+  "main.js": "/pokemondeck/static/js/main.2e980bbb.chunk.js",
+  "main.js.map": "/pokemondeck/static/js/main.2e980bbb.chunk.js.map",
+  "runtime~main.js": "/pokemondeck/static/js/runtime~main.b2cc0179.js",
+  "runtime~main.js.map": "/pokemondeck/static/js/runtime~main.b2cc0179.js.map",
+  "static/js/2.169b5950.chunk.js": "/pokemondeck/static/js/2.169b5950.chunk.js",
+  "static/js/2.169b5950.chunk.js.map": "/pokemondeck/static/js/2.169b5950.chunk.js.map",
+  "index.html": "/pokemondeck/index.html",
+  "precache-manifest.73165f1b526ddc052d9582d9e28625eb.js": "/pokemondeck/precache-manifest.73165f1b526ddc052d9582d9e28625eb.js",
+  "service-worker.js": "/pokemondeck/service-worker.js",
+  "static/css/main.91cf4cc5.chunk.css.map": "/pokemondeck/static/css/main.91cf4cc5.chunk.css.map"
 }
