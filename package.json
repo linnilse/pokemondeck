@@ -2,7 +2,7 @@
   "name": "pokemon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/linnilse/pokemondeck",
+  "homepage": " https://linnilse.github.io/pokemondeck/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",

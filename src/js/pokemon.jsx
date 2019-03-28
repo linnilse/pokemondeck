@@ -74,51 +74,18 @@ class Pokemons extends Component {
         return (
             <span style={containerStyles}>
                 {showModal && (
-                    <div onClick={this.handleCloseModal.bind(this)} style={overlayStyles}>
-                        <div style={modalStyles}>
-                            <button style={{ float: 'right' }} onClick={this.handleCloseModal.bind(this)}>Close</button>
-                            <img alt="" src={image} />
-                            <h2 className="pokemonH2">{name}</h2>
-                            <div className="flexWrapp">
-                                <div className="flexInner2">
-                                    <h3>Profile:</h3>
-                                    <ul>
-                                        <li><strong>Height:</strong> {height}</li>
-                                        <li><strong>Weight:</strong> {weight}</li>
-                                        <li><strong>Base exp:</strong> {base_experience}</li>
-                                    </ul>
-                                </div>
-                                <div className="flexInner2">
-                                    <h3>Abilitys:</h3>
-                                    <ul>
-                                        {abilitys.map(ability => (
-                                            <li>{ability}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="flexInner2">
-                                    <h3>Type:</h3>
-                                    <ul>
-                                        {type.map(type => (
-                                            <li>{type}</li>
-                                        ))}
+                    <Modal
+                        name={name}
+                        image={image}
+                        abilitys={abilitys}
+                        type={type}
+                        stats={stats}
+                        height={height}
+                        weight={weight}
+                        base_experience={base_experience}
+                        handleCloseModal={this.handleCloseModal.bind(this)}
 
-                                    </ul>
-                                </div>
-                                <div className="flexInner2">
-                                    <h3>Stat:</h3>
-                                    <ul>
-
-                                        {stats.map(stat => (
-                                            <li><strong>{stat.statName}:</strong> {stat.statNum}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                )}
+                    />)}
                 <ul style={flexwrapper}>
                     {this.props.pokemons.map((pokemon) => (
                         <li onClick={this.showOnePokemon.bind(this, pokemon.id)} key={pokemon.id} className="pokemonBox">
@@ -132,6 +99,65 @@ class Pokemons extends Component {
             </span>
         );
     }
+}
+
+
+class Modal extends React.Component {
+    render() {
+        const { image, name, height, weight, base_experience, abilitys, type, stats } = this.props
+        console.log(this.props);
+        return (
+            <div onClick={this.props.handleCloseModal.bind(this)} style={overlayStyles}>
+                <div style={modalStyles}>
+                    <button style={{ float: 'right' }} onClick={this.props.handleCloseModal.bind(this)}>Close</button>
+                    <img alt="" src={image} />
+                    <h2 className="pokemonH2">{name}</h2>
+                    <div className="flexWrapp">
+                        <div className="flexInner2">
+                            <h3>Profile:</h3>
+                            <ul>
+                                <li><strong>Height:</strong> {height}</li>
+                                <li><strong>Weight:</strong> {weight}</li>
+                                <li><strong>Base exp:</strong> {base_experience}</li>
+                            </ul>
+                        </div>
+                        <div className="flexInner2">
+                            <h3>Abilitys:</h3>
+                            <ul>
+                                {abilitys.map(ability => (
+                                    <li>{ability}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="flexInner2">
+                            <h3>Type:</h3>
+                            <ul>
+                                {type.map(type => (
+                                    <li>{type}</li>
+                                ))}
+
+                            </ul>
+                        </div>
+                        <div className="flexInner2">
+                            <h3>Stat:</h3>
+                            <ul>
+
+                                {stats.map(stat => (
+                                    <li><strong>{stat.statName}:</strong> {stat.statNum}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        )
+    }
+
+
+
+
 }
 let flexwrapper = {
     display: 'flex',
